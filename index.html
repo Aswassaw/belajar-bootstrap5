@@ -11,31 +11,36 @@
   <title>Belajar Bootstrap 5</title>
 
   <style>
-    .box {
-      height: 50px;
-      background-color: skyblue;
+    .border {
+      border: 1px solid black !important;
+    }
+
+    .hundred-vh {
+      height: 100vh;
     }
 
     .down {
       margin-bottom: 10px;
     }
+
+    .box {
+      height: 50px;
+      background-color: skyblue;
+    }
   </style>
 </head>
 
 <body>
-  <div style="border: 1px solid black;" class="container-lg">
-    <div class="row">
-      <div class="down col-12 col-sm-6 col-md-4 col-xl-3">
+  <div class="container-lg border">
+    <div class="hundred-vh row align-items-center justify-content-start">
+      <div class="down col-12 col-sm-6 col-md-4 col-xl-3 order-1">
         <div class="box">1</div>
       </div>
-      <div class="down col-12 col-sm-6 col-md-4 col-xl-3">
+      <div class="down col-12 col-sm-6 col-md-4 col-xl-3 order-3 offset-xl-3">
         <div class="box">2</div>
       </div>
       <div class="down col-12 col-sm-6 col-md-4 col-xl-3">
         <div class="box">3</div>
-      </div>
-      <div class="down col-12 col-sm-6 col-md-4 col-xl-3">
-        <div class="box">4</div>
       </div>
     </div>
 
