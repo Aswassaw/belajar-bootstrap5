@@ -9,9 +9,30 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
   <title>Belajar Bootstrap 5 - Utilities</title>
+
+  <style>
+    .x-button {
+      width: 40px;
+      height: 40px;
+      position: relative;
+      top: -10px;
+      right: -10px;
+    }
+
+    .x-button:hover {
+      cursor: pointer;
+    }
+
+    .kotak {
+      border: 1px solid black;
+      width: 300px;
+      height: 300px;
+    }
+  </style>
 </head>
 
 <body>
+  <!-- Part 1 -->
   <div class="container">
     <!-- Background -->
     <div class="bg-primary p-3">BG PRIMARY</div>
@@ -57,6 +78,48 @@
     <!-- Flex -->
     <div class="d-flex justify-content-center align-items-center border border-primary" style="height: 250px;">
       <h1>Welcome</h1>
+    </div>
+  </div>
+
+  <br>
+
+  <!-- Part 2 -->
+  <div class="container">
+    <!-- Float -->
+    <p class="float-end bg-primary text-light d-flex justify-content-center align-items-center rounded-circle x-button">
+      <span style="font-weight: bold;">X</span>
+    </p>
+    <p class="bg-success text-light p-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere nobis
+      cupiditate odit magnam eaque voluptatem corrupti et, porro mollitia commodi.
+    </p>
+
+    <br>
+
+    <!-- Overflow -->
+    <div class="kotak p-3 overflow-auto overflow-md-hidden">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga tempora commodi velit, eaque vero distinctio aliquid
+      esse omnis eligendi quidem assumenda enim libero accusantium numquam iure illum repudiandae corporis mollitia
+      voluptatem nostrum, est tenetur voluptates ratione. Unde dolores illo nisi, tempore repellat corrupti cupiditate
+      quas, veritatis, laborum vero nemo? Recusandae corrupti, aliquam nulla reiciendis dignissimos ex maiores facilis
+      harum distinctio rem? Voluptatibus, accusantium quis? Sapiente hic repudiandae earum, voluptatum in perferendis.
+      Vitae sunt illo sed, qui reprehenderit nesciunt aperiam a?
+    </div>
+
+    <br>
+
+    <!-- Shadow -->
+    <div class="p-3 border border-2 shadow">Shadow Bamg</div>
+
+    <br>
+
+    <!-- Sizing -->
+    <div class="kotak">
+      <div class="border border-2 border-primary p-2 w-50 h-25 ms-auto">
+        Manusia
+      </div>
+      <div class="border border-2 border-primary p-2 w-25 h-50 ms-auto">
+        Manusia
+      </div>
     </div>
   </div>
 
