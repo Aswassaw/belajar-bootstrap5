@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>Belajar Bootstrap 5 - List Group</title>
+
+  <style>
+    .banner {
+      height: 100vh;
+      object-fit: cover;
+      background-size: cover;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./jumbotron-img/jumbotron.jpg);
+    }
+
+    .line {
+      letter-spacing: -1.5px;
+      margin-right: 5px;
+    }
+
+    .badge-bg {
+      background-color: #1037e0;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-transparent" id="navbar" style="transition: .5s;">
+    <div class="container-md">
+      <a class="navbar-brand" href="#">
+        <img src="./navbar-img/logo.png" width="35px" alt="Brand Logo"> Nibiru
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarUtama"
+        aria-controls="navbarUtama" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarUtama">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Post</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Friend</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <img class="rounded-circle" src="./navbar-img/profile.png" width="35px" alt="Profile Picture"> Andry PA
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img class="rounded-circle" src="./navbar-img/profile.png" width="50px" alt="Profile Picture"> Andry
+                  Pebrianto
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Settings</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Of Navbar -->
+
+  <!-- Banner -->
+  <div class="container-fluid banner mb-5">
+    <div class="container h-100 d-flex justify-content-center align-items-center col-lg-6">
+      <div class="text-center">
+        <h1 class="text-light mb-3 fw-bold">Welcome To Anime World!</h1>
+        <p class="text-light d-none d-sm-block">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione omnis
+          minima architecto
+          sint ipsum numquam aliquam nam quae fuga nobis!</p>
+
+        <a href="#" class="btn btn-success">
+          Lihat Produk
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- End Of Banner -->
+
+  <!-- Accordion -->
+  <div class="container mb-5">
+    <p class="fs-2 text-center fw-bold">Pertanyaan Paling Sering Ditanyakan</p>
+
+    <div class="accordion col-md-8 col-lg-6 mx-auto" id="accordionAsk">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Website apa ini?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+          data-bs-parent="#accordionAsk">
+          <div class="accordion-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed corrupti nesciunt voluptatibus ratione culpa
+            voluptatum molestias unde consequatur voluptate dolores assumenda, tempora mollitia quos laborum tempore
+            nihil alias consequuntur cumque! Aspernatur doloribus earum quas architecto ut ipsa officia nostrum quo,
+            blanditiis illum, ipsam amet accusantium quod eaque libero inventore! Ut.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Apa keunggulan website ini?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+          data-bs-parent="#accordionAsk">
+          <div class="accordion-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum velit aliquid blanditiis, dolore quisquam
+            dolores. Distinctio facilis blanditiis optio eaque, accusamus tempora nihil molestias unde quod. Sed,
+            explicabo impedit. Consequuntur nulla non provident fuga soluta omnis eaque, ipsum illum maiores iusto a
+            saepe tempore veniam nisi reprehenderit magnam accusamus ducimus.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Apakah website ini gratis?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+          data-bs-parent="#accordionAsk">
+          <div class="accordion-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, odit fugiat minima nobis soluta, facilis
+            quidem omnis nulla, accusantium eligendi eveniet error assumenda necessitatibus labore cupiditate architecto
+            consectetur sint aliquid. Facere excepturi molestias quas ullam et voluptas quis fugiat, vel ad neque
+            perspiciatis in provident harum? Accusantium at maiores neque.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            Bagaimana saya bisa mendapatkan bantuan?
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+          data-bs-parent="#accordionAsk">
+          <div class="accordion-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quam labore esse placeat qui consequatur
+            soluta corrupti, quasi, enim porro dolorem dolorum provident ab eius reprehenderit expedita possimus odio
+            aliquam doloribus officia! Esse sapiente illo harum rerum minus consectetur fugiat veniam error? Nemo ut
+            natus iste debitis, laboriosam expedita officiis.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Of Accordion -->
+
+  <!-- Carousel -->
+  <div class="container-fluid bg-dark py-5 mb-5">
+    <div class="container">
+      <p class="fs-2 text-light text-center fw-bold">Produk Unggulan Kami</p>
+
+      <div id="carouselProduct" class="carousel slide col-lg-8 mx-auto" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselProduct" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselProduct" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselProduct" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselProduct" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./carousel-img/blue.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./carousel-img/green.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./carousel-img/purple.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./carousel-img/red.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProduct" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselProduct" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- End Of Carousel -->
+
+  <!-- Image -->
+  <div class="container mb-5">
+    <p class="fs-2 fw-bold text-center">Produk Terlaris</p>
+
+    <div class="mx-auto col-sm-10 col-md-8 col-lg-6">
+      <img class="img-fluid img-thumbnail" src="./image-img/1.png" alt="">
+    </div>
+  </div>
+  <!-- End Of Image -->
+
+  <!-- Review/Blockquote -->
+  <div class="container-fluid bg-dark py-5 mb-5">
+    <div class="container col-lg-10">
+      <p class="fs-2 text-light text-center fw-bold pb-4">
+        Apa Kata Pelanggan Kami?
+      </p>
+
+      <div class="text-center text-md-start mb-4">
+        <div class="row">
+          <div class="col-md-2 text-center d-none d-md-block">
+            <img class="rounded-circle border border-2" src="./blockquote-img/1.png" width="100px" alt="">
+          </div>
+          <div class="col">
+            <p class="text-light" style="font-size: 18px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+              aspernatur cumque
+              voluptate est fugit, ullam, laudantium at consectetur, architecto quo recusandae culpa repellat eveniet!
+              Quisquam.
+            </p>
+            <p class="text-secondary mt-2" style="font-size: 14px;">
+              <span class="line">----</span> Uzumaki Bayu
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center text-md-start mb-4">
+        <div class="row">
+          <div class="col">
+            <p class="text-light" style="font-size: 18px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Mollitia placeat, eaque
+              officia quasi nostrum facilis nulla non esse, soluta ipsum, consequuntur fugit reprehenderit rem ipsa!
+            </p>
+            <p class="text-secondary mt-2" style="font-size: 14px;">
+              <span class="line">----</span> Uchiha Udin
+            </p>
+          </div>
+          <div class="col-md-2 text-center d-none d-md-block">
+            <img class="rounded-circle border border-2" src="./blockquote-img/2.png" width="100px" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="text-center text-md-start">
+        <div class="row">
+          <div class="col-md-2 text-center d-none d-md-block">
+            <img class="rounded-circle border border-2" src="./blockquote-img/3.png" width="100px" alt="">
+          </div>
+          <div class="col">
+            <p class="text-light" style="font-size: 18px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Ullam atque porro deserunt
+              nam beatae sit id accusamus aperiam cupiditate mollitia nobis, ratione molestias assumenda velit?
+            </p>
+            <p class="text-secondary mt-2 " style="font-size: 14px;">
+              <span class="line">----</span> Hyuga Asep
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Of Review/Blockquote -->
+
+  <!-- Card And List Group -->
+  <div class="container-lg mb-5">
+    <p class="fs-2 text-center fw-bold">Daftar Produk</p>
+
+    <div class="row">
+      <div class="col-md-4 col-lg-3 col-xxl-2 my-2">
+        <!-- List Group -->
+        <div class="list-group">
+          <a href="#"
+            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center action active">Fantasy
+            <span class="badge badge-bg rounded-pill">15</span>
+          </a>
+          <a href="#"
+            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Slice Of
+            Life
+            <span class="badge badge-bg rounded-pill">3</span>
+          </a>
+          <a href="#"
+            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Mistery
+            <span class="badge badge-bg rounded-pill">7</span>
+          </a>
+          <a href="#"
+            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Horror
+            <span class="badge badge-bg rounded-pill">1</span>
+          </a>
+          <a href="#"
+            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Music
+            <span class="badge badge-bg rounded-pill">29</span>
+          </a>
+        </div>
+        <!-- End Of List Group -->
+      </div>
+      <div class="col">
+        <!-- Card -->
+        <div class="row justify-content-center justify-content-md-start">
+          <div class="col-sm-6 col-lg-4 col-xxl-3 my-2">
+            <div class="card border-primary h-100">
+              <img class="card-img-top " src="./card-img/1.jpg" alt="" style="height: 250px; object-fit: cover;">
+              <div class="card-body">
+                <h5 class="card-title">Anime Api</h5>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus molestiae
+                  ullam autem, rerum itaque corporis?</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-primary">Lihat Produk</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xxl-3 my-2">
+            <div class="card border-primary h-100">
+              <img class="card-img-top " src="./card-img/2.jpg" alt="" style="height: 250px; object-fit: cover;">
+              <div class="card-body">
+                <h5 class="card-title">Anime Api</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, officia!</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-primary">Lihat Produk</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xxl-3 my-2">
+            <div class="card border-primary h-100">
+              <img class="card-img-top " src="./card-img/3.png" alt="" style="height: 250px; object-fit: cover;">
+              <div class="card-body">
+                <h5 class="card-title">Anime Api</h5>
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, animi!
+                  Deserunt, sed.</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-primary">Lihat Produk</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xxl-3 my-2">
+            <div class="card border-primary h-100">
+              <img class="card-img-top " src="./card-img/4.png" alt="" style="height: 250px; object-fit: cover;">
+              <div class="card-body">
+                <h5 class="card-title">Anime Api</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, voluptas aliquam
+                  culpa neque quod error dolorum? Libero repudiandae similique voluptas!</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-primary">Lihat Produk</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xxl-3 my-2">
+            <div class="card border-primary h-100">
+              <img class="card-img-top " src="./card-img/5.jpg" alt="" style="height: 250px; object-fit: cover;">
+              <div class="card-body">
+                <h5 class="card-title">Anime Api</h5>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-primary">Lihat Produk</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xxl-3 my-2">
+            <div class="card border-primary h-100">
+              <img class="card-img-top " src="./card-img/6.jpg" alt="" style="height: 250px; object-fit: cover;">
+              <div class="card-body">
+                <h5 class="card-title">Anime Api</h5>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores doloremque
+                  quaerat necessitatibus.</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-primary">Lihat Produk</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Of Card -->
+      </div>
+    </div>
+  </div>
+  <!-- End Of Card And List Group -->
+
+  <br><br><br><br><br><br><br><br><br><br>
+
+  <script>
+    window.onscroll = () => {
+      scrollFunction();
+    }
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        document.getElementById("navbar").classList.remove("bg-transparent");
+        document.getElementById("navbar").classList.add("bg-dark");
+      } else {
+        document.getElementById("navbar").classList.remove("bg-dark");
+        document.getElementById("navbar").classList.add("bg-transparent");
+      }
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
